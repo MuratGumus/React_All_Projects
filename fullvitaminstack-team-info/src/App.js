@@ -1,9 +1,12 @@
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello React</h1>
-    </div>
-  )
+import Card from "./components/Card";
+import { contacts } from "./data";
+
+const App =() =>  {
+    return (
+        <div>
+            <Card contacts={contacts} />
+        </div>
+    );
 }
 
-export default App
+export default App;
